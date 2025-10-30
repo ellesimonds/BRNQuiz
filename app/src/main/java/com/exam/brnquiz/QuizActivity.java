@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class QuizActivity extends AppCompatActivity {
+    private String question = String.valueOf(findViewById(R.id.questionTextView));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +21,7 @@ public class QuizActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
     }
 }
