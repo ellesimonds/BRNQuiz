@@ -19,5 +19,19 @@
         android:layout_weight="1"
         />
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.exam.brnquiz.QuestionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_weight="1" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.exam.brnquiz.ScoreFragment"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_weight="1" />
+
 
 </LinearLayout>
