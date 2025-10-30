@@ -19,11 +19,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/beginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Begin"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="667dp"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

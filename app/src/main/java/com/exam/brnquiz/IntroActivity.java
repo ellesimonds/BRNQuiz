@@ -1,14 +1,19 @@
 package com.exam.brnquiz;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.lifecycle.ViewModelProvider;
 
 public class IntroActivity extends AppCompatActivity {
+
+    private Button beginButton = findViewById(R.id.beginButton);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +28,15 @@ public class IntroActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
     }
+
+    private View.OnClickListener buttonListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            setContentView(R.layout.activity_quiz);
+        }
+
+};
+
 }
